@@ -6,6 +6,8 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
   <link rel="stylesheet"
     href="css/index.css">
 </head>
@@ -13,17 +15,17 @@
 <body>
   <header>
     <ul class="menu">
-      <li class="menu-item"><a>О нас</a></li>
-      <li class="menu-item"><a>Рюкзаки</a></li>
-      <li class="menu-item"><a>Особенность</a></li>
+      <li class="menu-item"><a href="#about">О нас</a></li>
+      <li class="menu-item"><a href="#backpacks">Рюкзаки</a></li>
+      <li class="menu-item"><a href="#advantages">Особенность</a></li>
       <li class="menu-item action-button"><a>Контакты</a></li>
     </ul>
   </header>
-  <section class='main'>
+  <section id="main">
     <img src="img/logo.png"
       class="logo"
       alt="Backpack logo" />
-    <h1 class='moto'>
+    <h1 class="moto">
       <span>
         путешествуй
       </span>
@@ -33,13 +35,15 @@
       </span>
     </h1>
   </section>
-  <section class="about dark">
+  <section id="about"
+    class="dark">
     <div class="limiter">
       <h2>Кто мы?</h2>
       <p>Мы - команда энтузиастов, которая изготовляет стильнык и качественные рюкзаки. Наша цель сделать так, чтоб вам было очень удобно и комфортно в ваших поездках</p>
     </div>
   </section>
-  <section class="backpacks light">
+  <section id="backpacks"
+    class="light">
     <div class="limiter">
       <h2>Наша коллекция</h2>
       <div class="products-list">
@@ -53,6 +57,34 @@
           <div class="title"><span>Traveler</span></div>
         </div>
       </div>
+  </section>
+  <section id="advantages"
+    class="dark">
+    <div class="limiter">
+      <h2>Наши преимущества</h2>
+      <div class="advantages-container">
+        <div class="advantages-list">
+          <div class="advantages-list-item">
+            <span class="material-icons">attach_money</span>
+            <span>Доступная цена</span>
+          </div>
+          <div class="advantages-list-item">
+            <span class="material-icons">texture</span>
+            <span>Высокое качество</span>
+          </div>
+        </div>
+        <div class="advantages-list">
+          <div class="advantages-list-item">
+            <span class="material-icons">star_border</span>
+            <span>Уникальный дизайн</span>
+          </div>
+          <div class="advantages-list-item">
+            <span class="material-icons">architecture</span>
+            <span>Практичность</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 
