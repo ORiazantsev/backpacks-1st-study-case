@@ -79,6 +79,7 @@ p {
   background-image: url('../img/main.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
   background-position-y: -200px;
   background-attachment: fixed;
 }

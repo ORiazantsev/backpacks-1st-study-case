@@ -10,6 +10,25 @@
     rel="stylesheet">
   <link rel="stylesheet"
     href="css/index.css">
+  <script>
+    function sendContactForm() {
+      let name = document.getElementById('name').value;
+      console.log({
+        name
+      });
+      let email = document.getElementById('email').value;
+      console.log('email: ', email);
+      let massegeText = document.getElementById('massege-text').value;
+      console.log('Сообщение: ', massegeText);
+
+      let formInfo = {
+        name: name,
+        email: email,
+        massege: massegeText,
+      };
+      console.log(formInfo);
+    }
+  </script>
 </head>
 
 <body>
@@ -91,16 +110,20 @@
     <div class="form-limiter">
       <h2>Свяжитесь с нами</h2>
       <div class="form">
-        <div class="form-titles"><span>Имя</span><input class="form-input"
+        <div class="form-titles"><span>Имя</span><input id="name"
+            class="form-input"
             maxlength="15"
             type="text" /></div>
-        <div class="form-titles"><span>Email</span><input class="form-input"
+        <div class="form-titles"><span>Email</span><input id="email"
+            class="form-input"
             maxlength="15"
             type="text" /></div>
-        <div class="form-titles"><span>Сообщение:</span><textarea class="form-input-text"
+        <div class="form-titles"><span>Сообщение:</span><textarea id="massege-text"
+            class="form-input-text"
             rows="5"></textarea></div>
         <div class="action-button-limiter">
-          <div class="action-button">Отправить</div>
+          <div class="action-button"
+            onclick="sendContactForm()">Отправить</div>
         </div>
       </div>
     </div>
